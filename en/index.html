@@ -1,26 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automation Academy - Sales Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="assets/index-BxscozRA.js"></script>
-    <link rel="stylesheet" crossorigin href="assets/index-C0ZQsS23.css">
-    <script src="/__manus__/debug-collector.js" defer></script>
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <script
-      defer
-      src="https://manus-analytics.com/umami"
-      data-website-id="03828c79-5fc1-4acf-9102-aa05d7f47a8a"></script>
-  </body>
-
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+        .subtitle {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        .btn {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .feature-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .feature-text {
+            color: #666;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+            .hero {
+                padding: 50px 20px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>🚀 Automation Academy</h1>
+            <div class="subtitle">Master process automation and increase your productivity by 10x</div>
+            <a href="#" class="btn">I WANT TO ENROLL NOW</a>
+        </div>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <div class="feature-title">Complete Content</div>
+                <div class="feature-text">Over 50 hours of practical classes, from basic to advanced.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎓</div>
+                <div class="feature-title">Certificate</div>
+                <div class="feature-text">Recognized completion certificate in the market.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💻</div>
+                <div class="feature-title">Online Support</div>
+                <div class="feature-text">Get your questions answered directly with the teachers.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔄</div>
+                <div class="feature-title">Lifetime Access</div>
+                <div class="feature-text">Access the content whenever and wherever you want, forever.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <div class="feature-title">Multi-platform</div>
+                <div class="feature-text">Access from your computer, tablet, or cell phone.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <div class="feature-title">Real Projects</div>
+                <div class="feature-text">Learn by building real-world projects.</div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
